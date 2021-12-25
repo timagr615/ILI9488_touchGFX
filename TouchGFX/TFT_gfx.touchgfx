@@ -1,0 +1,214 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Welcome",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "sra",
+            "X": 73,
+            "Y": 67,
+            "Width": 334,
+            "Height": 186,
+            "TextId": "__SingleUse_F0LE",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "waiting",
+        "Components": [
+          {
+            "Type": "TextArea",
+            "Name": "waitgps",
+            "X": 68,
+            "Y": 137,
+            "Width": 344,
+            "Height": 47,
+            "TextId": "__SingleUse_MC9E",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Info",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 320,
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "box2",
+            "X": 452,
+            "Width": 3,
+            "Height": 320
+          },
+          {
+            "Type": "Box",
+            "Name": "box3",
+            "Y": 297,
+            "Width": 452,
+            "Height": 3
+          },
+          {
+            "Type": "Box",
+            "Name": "box4",
+            "X": 225,
+            "Y": 297,
+            "Width": 2,
+            "Height": 23
+          },
+          {
+            "Type": "Box",
+            "Name": "speed",
+            "X": 455,
+            "Y": 20,
+            "Width": 25,
+            "Height": 300,
+            "Color": {
+              "Red": 42,
+              "Green": 250,
+              "Blue": 49
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "avgSpeed",
+            "X": 445,
+            "Y": 151,
+            "Width": 35,
+            "Height": 3
+          },
+          {
+            "Type": "Box",
+            "Name": "courseLeft",
+            "X": 175,
+            "Y": 300,
+            "Width": 50,
+            "Height": 20,
+            "Color": {
+              "Red": 255,
+              "Green": 8,
+              "Blue": 8
+            }
+          },
+          {
+            "Type": "Box",
+            "Name": "courseRight",
+            "X": 227,
+            "Y": 300,
+            "Width": 50,
+            "Height": 20,
+            "Color": {
+              "Red": 42,
+              "Green": 250,
+              "Blue": 49
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "parameter",
+            "Width": 98,
+            "Height": 24,
+            "TextId": "__SingleUse_PFRO",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "maintext",
+            "Y": 50,
+            "Width": 404,
+            "Height": 221,
+            "TextId": "__SingleUse_JY85",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "avgcourse",
+            "X": 208,
+            "Y": 265,
+            "Width": 35,
+            "Height": 35,
+            "TextId": "__SingleUse_Y92U",
+            "TextRotation": "0",
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "avgspeed",
+            "X": 404,
+            "Y": 142,
+            "Width": 30,
+            "Height": 24,
+            "TextId": "__SingleUse_TL7L",
+            "TextRotation": "0",
+            "AutoSize": true
+          }
+        ],
+        "Interactions": []
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 480,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Welcome",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../TFT_gfx.ioc --platform=m4",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F4"
+  },
+  "Version": "4.18.1"
+}
